@@ -6,13 +6,7 @@ const pageNum = pages.length;
 
 let currPage = 0;
 
-pageListSetup();
-function pageListSetup() {
-  const spans = document.querySelectorAll(".page-counter div span");
-  const pageNumber = pages.length;
-
-  console.log(pages);
-}
+showMoreInit(); //Call this before pageListSetup()
 
 prevPage.onclick = () => changePage(-1);
 nextPage.onclick = () => changePage(1);
@@ -33,8 +27,18 @@ function changePage(dir) {
   window.history.pushState(null, "", "#" + pages[currPage].id);
 }
 
+/**
+ *
+ * @param {*} pageNumber Number instead of index. 1 instead of 0
+ */
+function changePageManual(pageIndex) {
+  currPage = pageIndex;
+  const currPageTag = document.querySelectorAll(".page-counter div span")[0];
+  currPageTag.innerText = pageIndex + 1;
+  window.history.pushState(null, "", "#" + pages[currPage].id);
+}
+
 //Show more button
-showMoreInit();
 function showMoreInit() {
   const mediaLists = document.querySelectorAll(".media");
   mediaLists.forEach((element) => {
@@ -55,3 +59,39 @@ function showMoreOnClick(evnt) {
   }
   root.classList.toggle("closed");
 }
+
+let prevY = window.scrollY;
+let throttleActive = false;
+function onScroll() {
+  let dir = window.scrollY < prevY ? 1 : -1;
+
+  const windowTop = window.scrollY;
+  const windowBottom = windowTop + window.innerHeight;
+  const neededPageTop = windowTop + (windowBottom - windowTop) * 0.25;
+
+  if (dir === -1) {
+    const currPageBottom =
+      pages[currPage].offsetHeight + pages[currPage].offsetTop;
+    if (currPageBottom <= neededPageTop) {
+      if (currPage === pages.length) {
+        prevY = window.scrollY;
+        return;
+      }
+      changePageManual(currPage + 1);
+    }
+  } else {
+    if (pages[currPage].offsetTop > neededPageTop) {
+      if (currPage === 0) {
+        prevY = window.scrollY;
+        return;
+      }
+      changePageManual(currPage - 1);
+    }
+  }
+
+  prevY = window.scrollY;
+
+  //TODO: Throttle this
+  //TODO: Needs to be tweaked for IOS
+}
+document.onscroll = (evnt) => onScroll(evnt);

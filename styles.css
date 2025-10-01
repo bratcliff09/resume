@@ -99,7 +99,9 @@ main {
 
 .media-list li {
   width: 500px;
+  /*
   background-color: #725ed6;
+  */
 }
 
 .media-list li img {
@@ -122,6 +124,19 @@ main {
 
   position: fixed;
   bottom: 0;
+  z-index: 3;
 
   padding: 12px 0;
+}
+
+@media (width <= 600px) and (orientation: portrait) {
+  .media-list li {
+    width: 95%;
+  }
+  .media-list li img {
+    width: 100%;
+  }
+  #last-show-more {
+    margin-bottom: 30px;
+  }
 }
