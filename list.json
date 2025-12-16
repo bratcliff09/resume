@@ -1,0 +1,70 @@
+{
+  "arr": [
+    {
+      "title": "FitRise",
+      "id": "fitrise",
+      "subtitle": "Fitness Website",
+      "description": "A cloud-connected step, water intake, and sleep tracker that adjusts the user's daily goals based on the previous day's performance. Includes a friends system, rewards system, and role-based security.",
+      "role": [
+        "Full-stack developer",
+        "Sole-backend developer as part of a team"
+      ],
+      "tech": ["HTML", "CSS", "JS", "SB", "PGSQL"],
+      "link": [
+        {
+          "type": "product",
+          "link": "https://bratcliff09.github.io/FitRise/",
+          "text": "FitRise"
+        },
+        { "type": "repo", "link": "https://github.com/bratcliff09/FitRise" }
+      ],
+      "media": [
+        "./images/fitrise/1.jpg",
+        "./images/fitrise/2.jpg",
+        "./images/fitrise/3.jpg",
+        "./images/fitrise/4.jpg"
+      ]
+    },
+    {
+      "title": "Fists of Fate",
+      "id": "fists-of-fate",
+      "subtitle": "Fighting Game",
+      "description": "A 2.5D fighting game. Includes a computer-controlled player in addition to standard human local multiplayer. Coded in a designer-friendly fashion for quick and easy changes to character data.",
+      "role": ["Sole developer"],
+      "tech": ["CSHARP", "UNITY", "BLENDER", "PS"],
+      "link": [
+        {
+          "type": "product",
+          "link": "https://bratcliff.itch.io/fists-of-fate",
+          "text": "Fists of Fate itch.io"
+        }
+      ],
+      "media": [
+        "./images/fists/fof2.jpg",
+        "./images/fists/fof12.jpg",
+        "./images/fists/fof1.jpg",
+        "./images/fists/fof3.jpg"
+      ]
+    },
+    {
+      "title": "Drum Game Clone",
+      "id": "drum-game",
+      "subtitle": "Rhythm Game",
+      "description": "A Python clone of the rhythm game Taiko no Tatsujin.",
+      "role": ["Sole developer"],
+      "tech": ["PY"],
+      "link": [
+        {
+          "type": "repo",
+          "link": "https://github.com/bratcliff09/drum_game_clone"
+        }
+      ],
+      "media": [
+        "./images/drum/1.jpg",
+        "./images/drum/2.jpg",
+        "./images/drum/3.jpg",
+        "./images/drum/4.jpg"
+      ]
+    }
+  ]
+}
