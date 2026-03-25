@@ -4,7 +4,7 @@
       "title": "FitRise",
       "id": "fitrise",
       "subtitle": "Fitness Website",
-      "description": "A cloud-connected step, water intake, and sleep tracker that adjusts the user's daily goals based on the previous day's performance. Includes a friends system, rewards system, and role-based security.",
+      "description": "A cloud-connected step, water intake, and sleep tracker that adjusts the user's daily goals based on the previous day's performance. Includes a friends system, rewards system, and role-based security.\nGuest account login available upon selecting 'Login.'",
       "role": [
         "Full-stack developer",
         "Sole-backend developer as part of a team"
@@ -70,7 +70,7 @@
       "title": "Game Store",
       "id": "game-store",
       "subtitle": "Ecommerce Site Mockup",
-      "description": "A video game centered ecommerce website mockup. A static website created using vanilla HTML, CSS, and JS. It's complete with screen reader accessibilty and mobile responsiveness.",
+      "description": "A video game-centered ecommerce website mockup. A static website created using vanilla HTML, CSS, and JS. It's complete with screen reader accessibility and mobile responsiveness.",
       "role": ["Sole developer"],
       "tech": ["HTML", "CSS", "JS"],
       "link": [
