@@ -65,6 +65,31 @@
         "./images/drum/3.jpg",
         "./images/drum/4.jpg"
       ]
+    },
+    {
+      "title": "Game Store",
+      "id": "game-store",
+      "subtitle": "Ecommerce Site Mockup",
+      "description": "A video game centered ecommerce website mockup. A static website created using vanilla HTML, CSS, and JS. It's complete with screen reader accessibilty and mobile responsiveness.",
+      "role": ["Sole developer"],
+      "tech": ["HTML", "CSS", "JS"],
+      "link": [
+        {
+          "type": "repo",
+          "link": "https://github.com/bratcliff09/drum_game_clone"
+        },
+        {
+          "type": "product",
+          "link": "https://bratcliff09.github.io/game-store-static/",
+          "text": "Website"
+        }
+      ],
+      "media": [
+        "./images/gameStoreStatic/1.jpg",
+        "./images/gameStoreStatic/2.jpg",
+        "./images/gameStoreStatic/3.jpg",
+        "./images/gameStoreStatic/4.jpg"
+      ]
     }
   ]
 }
