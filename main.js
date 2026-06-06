@@ -45,10 +45,12 @@ function createPage(pageData) {
     if (i < role.length - 1) role_elem.innerText += " | ";
   }
 
+  // Technologies
   const tech_elem = document.createElement("p");
   tech_elem.innerText = "Technologies: ";
   for (let i = 0; i < tech.length; i++) {
-    tech_elem.innerText += Tech[tech[i]];
+    const techWord = Tech[tech[i]] ? Tech[tech[i]] : tech[i];
+    tech_elem.innerText += techWord;
     if (i < tech.length - 1) tech_elem.innerText += ", ";
   }
 
@@ -166,7 +168,7 @@ function onScroll() {
     const { offsetHeight, offsetTop } = pages[currPage - 1];
     if (currTop <= offsetHeight + offsetTop) changePageManual(currPage - 1);
   } else {
-    const buffer = -40;
+    const buffer = -80;
     const nextPageY = pages[currPage + 1].offsetTop + buffer;
     if (currTop >= nextPageY) changePageManual(currPage + 1);
   }

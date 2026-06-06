@@ -6,8 +6,8 @@
       "subtitle": "Fitness Website",
       "description": "A cloud-connected step, water intake, and sleep tracker that adjusts the user's daily goals based on the previous day's performance. Includes a friends system, rewards system, and role-based security.\nGuest account login available upon selecting 'Login.'",
       "role": [
-        "Full-stack developer",
-        "Sole-backend developer as part of a team"
+        "Fullstack developer",
+        "Sole backend developer as part of a team"
       ],
       "tech": ["HTML", "CSS", "JS", "SB", "PGSQL"],
       "link": [
@@ -76,7 +76,7 @@
       "link": [
         {
           "type": "repo",
-          "link": "https://github.com/bratcliff09/drum_game_clone"
+          "link": "https://github.com/bratcliff09/game-store-static"
         },
         {
           "type": "product",
@@ -89,6 +89,54 @@
         "./images/gameStoreStatic/2.jpg",
         "./images/gameStoreStatic/3.jpg",
         "./images/gameStoreStatic/4.jpg"
+      ]
+    },
+    {
+      "title": "Game Store React",
+      "id": "game-store-react",
+      "subtitle": "Ecommerce Site Remake",
+      "description": "A port of my previous Game Store project, a static website, to React. Utilizes MirageJS to emulate API requests. Has a 'Debug' option that lets you simulate a slow or broken connection to the server.",
+      "role": ["Sole developer"],
+      "tech": ["React", "React Router", "MirageJS", "CSS"],
+      "link": [
+        {
+          "type": "repo",
+          "link": "https://github.com/bratcliff09/game-store-react"
+        },
+        {
+          "type": "product",
+          "link": "https://bratcliff09.github.io/game-store-react/",
+          "text": "Website"
+        }
+      ],
+      "media": [
+        "./images/gameStoreReact/1.jpg",
+        "./images/gameStoreReact/2.jpg",
+        "./images/gameStoreReact/3.jpg"
+      ]
+    },
+    {
+      "title": "Unity Cutscene System",
+      "id": "unity-cutscene",
+      "description": "A designer-friendly cutscene system for Unity allowing for non-programmers to easily create cutscenes.\nUses Unity's built-in Timeline system for the cinematics, and uses a custom dialogue system for conversations and cutscene routing. Dialogue dynamically parsed from JSON.",
+      "role": ["Sole developer"],
+      "tech": ["CSHARP", "UNITY", "PY", "JSON"],
+      "link": [
+        {
+          "type": "product",
+          "link": "https://bratcliff.itch.io/cutscene-system",
+          "text": "itch.io"
+        },
+        {
+          "type": "product",
+          "link": "https://www.youtube.com/watch?v=gP3PEyL0aNw",
+          "text": "YouTube Commentary"
+        }
+      ],
+      "media": [
+        "./images/cutsceneSystem/1.png",
+        "./images/cutsceneSystem/2.png",
+        "./images/cutsceneSystem/3.jpg"
       ]
     }
   ]
